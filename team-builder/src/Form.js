@@ -17,20 +17,20 @@ function Form({ uyeEkle }) {
     setYeniUye({ name: '', email: '', role: '' });
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
+    <form className='form' onSubmit={handleSubmit}>
+      <label className='formElement'>
         Name:
         <input type="text" name="name" value={yeniUye.name} onChange={handleChange} />
       </label>
-      <label>
+      <label className='formElement'>
         Email:
         <input type="email" name="email" value={yeniUye.email} onChange={handleChange} />
       </label>
-      <label>
+      <label className='formElement'>
         Role:
         <input type="text" name="role" value={yeniUye.role} onChange={handleChange} />
       </label>
-      <button type="submit">Add Team Member</button>
+      <button className='formButton' type="submit">Üye Ekle</button>
     </form>
   );
 }
